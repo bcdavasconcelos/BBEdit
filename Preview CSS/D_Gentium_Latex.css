@@ -1,0 +1,464 @@
+/*!
+ * LaTeX.css (https://latex.now.sh/)
+ *
+ * Source: https://github.com/vincentdoerig/latex-css
+ * Licensed under MIT (https://github.com/vincentdoerig/latex-css/blob/master/LICENSE)
+*/
+
+@font-face{
+	font-family: Gentium Plus;
+	font-weight: normal;
+	font-style: normal;
+	unicode-range: U+03??, U+1F??; U+03??;
+}
+
+@font-face {
+  font-family: Latin Modern Roman;
+/*   font-family: Cormorant Garamond; */
+  unicode-range: U+0020-007F; U+00A0-00FF; U+0100-017F; U+0180-024F;
+  font-display: swap;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Make default font-size 1rem and add smooth scrolling to anchors */
+html {
+  font-size: 1.2rem;
+  scroll-behavior: smooth;
+  background-color: #2c2c2d;
+}
+
+body {
+  font-family: Gentium Plus, Latin Modern Roman, GFS Didot, Georgia, Cambria, 'Times New Roman', Times, serif;
+  line-height: 1.8;
+  width: auto;
+  max-width: 90%;
+/*   max-width: 80ch; */
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+
+  counter-reset: theorem;
+  counter-reset: definition;
+
+  color: hsl(210, 20%, 98%);
+  background-color: #2c2c2d;
+
+  text-rendering: optimizeLegibility;
+}
+
+/* Justify and hyphenate all paragraphs */
+p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  margin-top: 1rem;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make links red */
+a,
+a:visited {
+  color: #9bcb98;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Prevent textarea from overflowing */
+textarea {
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Styles for inline code or code snippets */
+code,
+pre,
+kbd {
+  font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  font-size: 85%;
+}
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 4px;
+  background: hsl(210, 28%, 93%);
+}
+pre code {
+  font-size: 95%;
+  position: relative;
+}
+kbd {
+  background: hsl(210, 5%, 100%);
+  border: 1px solid hsl(210, 5%, 70%);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 75%;
+}
+
+/* Make table 100% width, add borders between rows */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 100%;
+}
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+}
+td {
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+thead th {
+  border-bottom: 2px solid hsl(0, 0%, 70%);
+}
+tfoot th {
+  border-top: 2px solid hsl(0, 0%, 70%);
+}
+
+/* Center align the title */
+h1:first-child {
+  text-align: center;
+}
+
+/* Nested ordered list for ToC */
+nav ol {
+  counter-reset: item;
+  padding-left: 2rem;
+}
+nav li {
+  display: block;
+}
+nav li:before {
+  content: counters(item, '.') ' ';
+  counter-increment: item;
+  padding-right: 0.85rem;
+}
+
+/* Center definitions (most useful for display equations) */
+dl dd {
+  text-align: center;
+}
+
+/* Theorem */
+.theorem {
+  counter-increment: theorem;
+  display: block;
+  margin: 12px 0;
+  font-style: italic;
+}
+.theorem::before {
+  content: 'Theorem ' counter(theorem) '. ';
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Lemma */
+.lemma {
+  counter-increment: theorem;
+  display: block;
+  margin: 12px 0;
+  font-style: italic;
+}
+.lemma::before {
+  content: 'Lemma ' counter(theorem) '. ';
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Proof */
+.proof {
+  display: block;
+  margin: 12px 0;
+  font-style: normal;
+  position: relative;
+}
+.proof::before {
+  content: 'Proof. ' attr(title);
+  font-style: italic;
+}
+.proof:after {
+  content: '◾️';
+  position: absolute;
+  right: -12px;
+  bottom: -2px;
+}
+
+/* Definition */
+.definition {
+  counter-increment: definition;
+  display: block;
+  margin: 12px 0;
+  font-style: normal;
+}
+.definition::before {
+  content: 'Definition ' counter(definition) '. ';
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Center align author name, use small caps and add vertical spacing  */
+.author {
+  margin: 0.85rem 0;
+  font-variant-caps: small-caps;
+  text-align: center;
+}
+
+/* Make footnote text smaller and left align it (looks bad with long URLs) */
+.footnotes p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 85%;
+  margin-bottom: 0.4rem;
+}
+.footnotes {
+  border-top: 1px solid hsl(0, 0%, 39%);
+}
+
+/* Center title and paragraph */
+.abstract,
+.abstract p {
+  text-align: center;
+}
+.abstract {
+  margin: 2.25rem 0;
+}
+
+/* Format the LaTeX symbol correctly (a higher up, e lower) */
+.latex span:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  vertical-align: 0.28em;
+  margin-left: -0.48em;
+  margin-right: -0.15em;
+  line-height: 1ex;
+}
+
+.latex span:nth-child(2) {
+  text-transform: uppercase;
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+  line-height: 1ex;
+}
+
+/* Heading typography */
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  margin-bottom: 1.625rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin-top: 1.8rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 2.5rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.625rem;
+}
+
+h1 + h2 {
+  margin-top: 1.625rem;
+}
+
+h2 + h3,
+h3 + h4,
+h4 + h5 {
+  margin-top: 0.8rem;
+}
+
+h5 + h6 {
+  margin-top: -0.8rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.8rem;
+}
+
+details {
+/* 	background: #3B3B3C; */
+	margin: 1.5em 10px;
+	padding: 0.5em 30px;
+	position: relative;
+	border-left: 0.2px solid #5A5B5B;
+}
+
+details:hover {
+}
+
+details:before {
+	color: #B2D2AC;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+details p {
+	color: #F6F6EE;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	display: inline;
+}
+summary {
+    cursor: pointer;
+    color: #646364;
+/* 	background: #FBFAFA; */
+ 	font-weight: bold;
+}
+summary:hover {
+    color: #d1d0c7;
+}
+summary:focus { 
+    outline: none;
+    color: #d1d0c7;
+	box-shadow: 0 0 0px;
+	border-bottom: 0px solid #5A5B5B;
+}
+summary::-webkit-details-marker {
+    color: none;
+    display: none;
+    background-color: none;
+}
+summary:before {
+    content: "◦";
+    margin-right: 5px;
+}
+summary.backlinks:before {
+    content: "🕸"; 
+    font-size: 0.8em;
+}
+
+/*
+  CriticMarkup CSS by Fletcher T. Penney
+
+  Shows CSS tricks to improve visibility of CriticMarkup output
+*/
+
+del,
+ins,
+mark,
+span.critic {
+/* 	color: #fffdfa!important; */
+}
+
+del {
+	background: rgba(224, 81, 106, .35);
+}
+
+ins {
+	background: #67b03e;
+}
+
+mark,
+span.critic {
+	background: #fec03e;
+}
+
+span.critic.comment,
+span.criticcomment {
+	background: #fb6961;
+}
+
+span.critic.comment::before {
+	content:"{>> ";
+}
+
+span.critic.comment::after {
+	content: " <<}";
+}
+
+.references csl-bib-body, 
+#refs {
+padding-top: 2em;
+padding-bottom:2em;
+}
+
+
+.csl-entry > a::before {
+content: "🔗";
+padding-left: 5px;
+font-size: 1rem;
+}
+
+.csl-entry > a {
+font-size: 0em;
+text-decoration: none
+}

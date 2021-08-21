@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SavedGrepPatterns</key>
+	<array>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>^\s*$\n</string>
+			<key>Title</key>
+			<string>Empty lines</string>
+			<key>UniqueID</key>
+			<string>F4664982-2186-459E-8FF3-C7A150BDF8F4</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>(?s)</string>
+			<key>Title</key>
+			<string>Make dot match \n</string>
+			<key>UniqueID</key>
+			<string>1235ADD7-55D8-43E2-BAA9-58A904ABA48A</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>[\1]</string>
+			<key>SearchPattern</key>
+			<string>(-@.+?\b)</string>
+			<key>Title</key>
+			<string>Pandoc ([-@NoAuthor])</string>
+			<key>UniqueID</key>
+			<string>4485F0BF-7016-469B-A0C2-7561645C717A</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string> [\0]{lang=grc}</string>
+			<key>SearchPattern</key>
+			<string>(((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|\h|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|\h|(\d{1,4}[a|b]\d{1,2})){0,1})+</string>
+			<key>Title</key>
+			<string>Polyglossia {lang=grc}</string>
+			<key>UniqueID</key>
+			<string>DF1F4EFD-5629-48F4-9297-089207CCC963</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>^\d+\. .+?\h{.+?}\h.+?,\h.+?,.+?:\h.+?,\h\d+\h*\(*.+?\)*:\hSt\h.+?\.Word count:\h(.+?)$</string>
+			<key>Title</key>
+			<string>TLG Bib entry</string>
+			<key>UniqueID</key>
+			<string>13419297-E2EE-482E-BF5E-3B2BBFB644E8</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\2, \1</string>
+			<key>SearchPattern</key>
+			<string>(.+?)(\b[A-Za-z]+\b)$</string>
+			<key>Title</key>
+			<string>Immanuel Kant → Kant, Immanuel</string>
+			<key>UniqueID</key>
+			<string>65223A3B-E4CC-4F22-BDAC-F846996EFCAC</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>\p{Greek}+</string>
+			<key>Title</key>
+			<string>Greek words</string>
+			<key>UniqueID</key>
+			<string>2E533052-EF28-4812-B503-E0073C5C100B</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>\w*\p{Latin}</string>
+			<key>Title</key>
+			<string>Latin words</string>
+			<key>UniqueID</key>
+			<string>8065913B-D0B0-49D2-AD56-9AD52BFCBA5A</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>(\d{1,4}[a|b])(\d{1,2})</string>
+			<key>Title</key>
+			<string>Bekker Nr</string>
+			<key>UniqueID</key>
+			<string>30409B80-92DE-4396-91F2-A9F96AD3A4B6</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>Rep\d*[a|b|c|d|e]\d\d</string>
+			<key>Title</key>
+			<string>Stephanus</string>
+			<key>UniqueID</key>
+			<string>745DCC4A-BCE1-4528-90E2-3E16D1C44A2A</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>___________________________________________</string>
+			<key>Title</key>
+			<string>___________________________________________</string>
+			<key>UniqueID</key>
+			<string>3E719BB5-0EA4-41E9-B4D6-7F4B77C89F08</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>\w*[ã|õ]\w*</string>
+			<key>Title</key>
+			<string>Word with X or Y [ã|õ]</string>
+			<key>UniqueID</key>
+			<string>4D67E2D8-0296-4827-8F9A-C9F6FC1F1DA9</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>\b\w*(ã|õ|á|é|í|ó|ú|à|è|ì|ò|ù|â|ê|î|ô|û|ç)\w*\b</string>
+			<key>Title</key>
+			<string>Words with diacritics (Latin)</string>
+			<key>UniqueID</key>
+			<string>9548F122-3662-401A-841D-66B5870B3C05</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1\2 \3 </string>
+			<key>SearchPattern</key>
+			<string>\d*\s*[A-Za-z]{1,6}\.(\d{1,4}[a|b])\.(\d*)\s:\s(.+)\n</string>
+			<key>Title</key>
+			<string>Bekker - text cleaner</string>
+			<key>UniqueID</key>
+			<string>E41EDB43-3D95-4C96-8421-4D6C0C8D13B1</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\2 \1</string>
+			<key>SearchPattern</key>
+			<string>–\s*(\d*[a|b]\d*) (\p{Greek}+)</string>
+			<key>Title</key>
+			<string>Bekker - erase hyphenation</string>
+			<key>UniqueID</key>
+			<string>B2169744-9593-4BC4-A8C6-844A30F55818</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1  \n\n\2</string>
+			<key>SearchPattern</key>
+			<string>([\.|\;|·])(.{2,7}\s[Α-ΩἉἙἩἹὉὩὙἌἜἬἼὌὬἍἝἭἽὍὭὝἊἚἪἺὊὬἋἛἫἻὋὫὛἘἈἸὈ᾽ΥὨΦΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΦΧΨ])</string>
+			<key>Title</key>
+			<string>Bekker - insert linebreak between paragraphs</string>
+			<key>UniqueID</key>
+			<string>F6A2008C-ADE0-4124-BDCF-D1587F05B35F</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>\p{Greek}+(?=.+πόλει)</string>
+			<key>Title</key>
+			<string>Word in GREEK before other specific word (e.g. πόλει)</string>
+			<key>UniqueID</key>
+			<string>D6E6AD94-DAFB-4402-95E3-D1AE91DFF924</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>^\s*$\n</string>
+			<key>Title</key>
+			<string>Remove Blank Lines</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1\3\4</string>
+			<key>SearchPattern</key>
+			<string>(.*)(\t)(\t*)(.*)</string>
+			<key>Title</key>
+			<string>Shift Variables Left</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1\2\t\3</string>
+			<key>SearchPattern</key>
+			<string>(.*)(\t\t*)(.*)</string>
+			<key>Title</key>
+			<string>Shift Variables Right</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>/* \1 */</string>
+			<key>SearchPattern</key>
+			<string>{([^}]*)}</string>
+			<key>Title</key>
+			<string>Pascal Comment to C Comment</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>/* \1 */</string>
+			<key>SearchPattern</key>
+			<string>//(.*)</string>
+			<key>Title</key>
+			<string>C++ Comment to C Comment</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\t</string>
+			<key>SearchPattern</key>
+			<string> +</string>
+			<key>Title</key>
+			<string>Run of Spaces to One Tab</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1</string>
+			<key>SearchPattern</key>
+			<string>^[^\t]+\t([^\t]+)</string>
+			<key>Title</key>
+			<string>Column #2</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>\A(\d+[a|b]\d\d)(-[a|b]*\d\d)*</string>
+			<key>Title</key>
+			<string>Bekker first occurrence</string>
+			<key>UniqueID</key>
+			<string>0E21104D-9240-48C5-945F-39ACC0EF76DF</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>[-|\n](\d+[a|b]\d\d)(?!.+\n)</string>
+			<key>Title</key>
+			<string>Bekker last occurrence (or after `--`)</string>
+			<key>UniqueID</key>
+			<string>5E2B52AB-08E6-4477-9D5F-D09B18C6DD72</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>[[\1\2]]</string>
+			<key>SearchPattern</key>
+			<string>^(.)(?=[PARTY*PODS])(.+)</string>
+			<key>Title</key>
+			<string>Wikilink Solution (for lines not starting with *)</string>
+			<key>UniqueID</key>
+			<string>24478C2C-5BB8-4199-AB73-49F2ED579FA3</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\n\2\n\t\1\2</string>
+			<key>SearchPattern</key>
+			<string>\n\t(.+?)(\d{1,4}[a|b](1|10|15|20|25|30|35|40)) </string>
+			<key>Title</key>
+			<string>Bekker dict</string>
+			<key>UniqueID</key>
+			<string>76EC45A5-DC4E-4E75-B980-09745E85A3D0</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string></string>
+			<key>SearchPattern</key>
+			<string>(\d{1,4}[a|b]\d{1,2})</string>
+			<key>Title</key>
+			<string>Bekker1</string>
+			<key>UniqueID</key>
+			<string>5BF9B6B7-401C-4C02-A30C-EB6194665F92</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1</string>
+			<key>SearchPattern</key>
+			<string>doi={(.+?)}</string>
+			<key>Title</key>
+			<string>DOI</string>
+			<key>UniqueID</key>
+			<string>E70EE09E-B78F-407F-8588-A983D8E47C48</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>[\0]{lang=grc}</string>
+			<key>SearchPattern</key>
+			<string>((((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|(\d{1,4}[a|b]\d{1,2})){0,1})+(((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|\h|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|\h|(\d{1,4}[a|b]\d{1,2})){0,1})+(((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|(\d{1,4}[a|b]\d{1,2})){0,1})+)</string>
+			<key>Title</key>
+			<string>Polyglossia 2 {lang=grc}</string>
+			<key>UniqueID</key>
+			<string>E5675DD5-F976-406E-BF7C-DC2F590D01ED</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\1 \2</string>
+			<key>SearchPattern</key>
+			<string>(\p{Greek})(\d)</string>
+			<key>Title</key>
+			<string>Greek\d</string>
+			<key>UniqueID</key>
+			<string>BC882487-92C5-42E5-ACC1-F10E2DF2DEBC</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string>\\grc{ \0}</string>
+			<key>SearchPattern</key>
+			<string>(((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|\h|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|\h|(\d{1,4}[a|b]\d{1,2})){0,1})+</string>
+			<key>Title</key>
+			<string>Fix greek text</string>
+			<key>UniqueID</key>
+			<string>43F0CD1E-425B-44F0-8D18-0D2042EC6D3F</string>
+		</dict>
+		<dict>
+			<key>ReplacePattern</key>
+			<string> \2 \1</string>
+			<key>SearchPattern</key>
+			<string>\h(\p{Greek}+)-\h(\d{1,4}[a|b]\d{1,2})\h</string>
+			<key>Title</key>
+			<string>Remove word hyphenation in Bekker</string>
+			<key>UniqueID</key>
+			<string>09EC4516-C19B-43FD-88A5-D12D52028962</string>
+		</dict>
+	</array>
+</dict>
+</plist>

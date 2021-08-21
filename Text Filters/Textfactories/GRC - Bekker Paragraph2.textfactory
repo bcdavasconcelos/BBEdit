@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TextTransformComponents</key>
+	<array>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>CaseSensitive</key>
+				<true/>
+				<key>ReplaceString</key>
+				<string>\1  \n\n\2</string>
+				<key>SearchString</key>
+				<string>([\.|\;|·])\s*$\n(.{2,20}\s[Α-ΩἉἙἩἹὉὩὙἌἜἬἼὌὬἍἝἭἽὍὭὝἊἚἪἺὊὬἋἛἫἻὋὫὛἘἈἸὈ᾽ΥὨΦΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΦΧΨ])</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+			<key>Disabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>%%</string>
+				<key>SearchString</key>
+				<string>
+
+</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+			<key>Disabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string> </string>
+				<key>SearchString</key>
+				<string>\h*\n</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>\2 \1 </string>
+				<key>SearchString</key>
+				<string>[–|-|—]\s+(\d*[A-Za-z]*\d+[A-Za-z]*\d*)\s+(.+?)\h</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+			<key>Disabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>
+
+</string>
+				<key>SearchString</key>
+				<string>%%</string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+			<key>Disabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>CaseSensitive</key>
+				<false/>
+				<key>ReplaceString</key>
+				<string>  \n</string>
+				<key>SearchString</key>
+				<string>\h*\n</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+			<key>Disabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string></string>
+				<key>SearchString</key>
+				<string>- </string>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+	</array>
+	<key>TextTransformOptions</key>
+	<dict>
+		<key>FilterDictionary</key>
+		<dict>
+			<key>FilterTerms</key>
+			<array>
+				<dict>
+					<key>Field</key>
+					<string>FileNameExtension</string>
+					<key>Operator</key>
+					<string>+Equ</string>
+					<key>TermData</key>
+					<string>md</string>
+				</dict>
+			</array>
+			<key>Mode</key>
+			<string>||</string>
+			<key>Name</key>
+			<string>MD</string>
+			<key>UniqueID</key>
+			<string>6D1657A0-FAFC-4A5A-891C-A773C1408E2A</string>
+		</dict>
+		<key>SaveMode</key>
+		<string>ask </string>
+		<key>SearchRecursive</key>
+		<true/>
+		<key>TextFilesOnly</key>
+		<true/>
+		<key>UniqueID</key>
+		<string>6D1657A0-FAFC-4A5A-891C-A773C1408E2A</string>
+	</dict>
+	<key>TextTransformSources</key>
+	<array>
+		<dict>
+			<key>SourceNodeData</key>
+			<string>file:///Users/bcdav/Dropbox/Databases/MD/Corpora/Resp/</string>
+			<key>SourceNodeParentType</key>
+			<string></string>
+			<key>SourceNodeType</key>
+			<string>FrontmostProject</string>
+		</dict>
+	</array>
+	<key>com.barebones.DocumentType</key>
+	<string>TextTransform</string>
+</dict>
+</plist>

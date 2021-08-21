@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+	"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<!--  The smallest CLM that will color keywords.
+      Copyright (c) 2012 Bare Bones Software, Inc. -->
+		
+<dict>
+	<!-- You must identify the plist as a CLM: -->
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	
+	<!-- You must identify your language: -->
+	<key>BBLMLanguageDisplayName</key>  <string>Tinderbox3</string>
+	<key>BBLMLanguageCode</key>         <string>Tbxm</string>
+	
+	<!-- Not required, but there’s not much point to
+	     a language module if it doesn’t color syntax: -->
+	<key>BBLMColorsSyntax</key>         <true/>
+	
+	<!-- Specify some keywords. This isn’t required, either,
+             but it provides something to color: -->
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>abs</string>
+		<string>action</string>
+		<string>any</string>
+		<string>atan</string>
+		<string>attributeEncode</string>
+		<string>avg_if</string>
+		<string>avg</string>
+		<string>between</string>
+		<string>capitalize</string>
+		<string>ceil</string>
+		<string>collect_if</string>
+		<string>collect</string>
+		<string>Color.blue</string>
+		<string>Color.brightness</string>
+		<string>Color.format</string>
+		<string>Color.green</string>
+		<string>Color.hue</string>
+		<string>Color.red</string>
+		<string>Color.saturation</string>
+		<string>compositeFor:count</string>
+		<string>compositeFor:kind</string>
+		<string>compositeFor:name</string>
+		<string>compositeFor:role</string>
+		<string>compositeFor:roles</string>
+		<string>compositeFor</string>
+		<string>compositeWithName</string>
+		<string>contains</string>
+		<string>cos</string>
+		<string>count</string>
+		<string>covid</string>
+		<string>create</string>
+		<string>createAgent</string>
+		<string>Date.day</string>
+		<string>Date.format</string>
+		<string>Date.hour</string>
+		<string>Date.minute</string>
+		<string>Date.month</string>
+		<string>Date.second</string>
+		<string>Date.week</string>
+		<string>Date.weekday</string>
+		<string>Date.year</string>
+		<string>date</string>
+		<string>date</string>
+		<string>day</string>
+		<string>days</string>
+		<string>degrees</string>
+		<string>delete</string>
+		<string>descendedFrom</string>
+		<string>distance</string>
+		<string>distanceTo</string>
+		<string>do</string>
+		<string>do</string>
+		<string>drivingTimeTo</string>
+		<string>each</string>
+		<string>else</string>
+		<string>end if</string>
+		<string>escapeHTML</string>
+		<string>eval</string>
+		<string>eval</string>
+		<string>every</string>
+		<string>exp</string>
+		<string>exportedString</string>
+		<string>find</string>
+		<string>first</string>
+		<string>firstWord</string>
+		<string>floor</string>
+		<string>format</string>
+		<string>hasLocalValue</string>
+		<string>hour</string>
+		<string>hours</string>
+		<string>idEncode</string>
+		<string>if</string>
+		<string>indented</string>
+		<string>inheritsFrom</string>
+		<string>inside</string>
+		<string>Interval.day</string>
+		<string>Interval.format</string>
+		<string>Interval.hour</string>
+		<string>Interval.minute</string>
+		<string>Interval.second</string>
+		<string>interval</string>
+		<string>isbn10</string>
+		<string>isbn13</string>
+		<string>isDuplicateName</string>
+		<string>jsonEncode</string>
+		<string>last</string>
+		<string>lastWord</string>
+		<string>linkedFrom</string>
+		<string>linkedTo</string>
+		<string>linkFrom</string>
+		<string>linkFromOriginal</string>
+		<string>linkTo</string>
+		<string>linkToOriginal</string>
+		<string>List.any</string>
+		<string>List.at</string>
+		<string>List.contains</string>
+		<string>List.containsAnyOf</string>
+		<string>List.count</string>
+		<string>List.each</string>
+		<string>List.empty</string>
+		<string>List.every</string>
+		<string>List.format</string>
+		<string>List.icontains</string>
+		<string>List.icontainsAnyOf</string>
+		<string>List.intersect</string>
+		<string>List.isort</string>
+		<string>List.lookup</string>
+		<string>List.max</string>
+		<string>List.min</string>
+		<string>List.nsort</string>
+		<string>List.remove</string>
+		<string>List.replace</string>
+		<string>List.reverse</string>
+		<string>List.size</string>
+		<string>List.sort</string>
+		<string>List.sum</string>
+		<string>List.tr</string>
+		<string>List.unique</string>
+		<string>list</string>
+		<string>locale</string>
+		<string>log</string>
+		<string>lowercase</string>
+		<string>max</string>
+		<string>min</string>
+		<string>minute</string>
+		<string>minutes</string>
+		<string>mod</string>
+		<string>month</string>
+		<string>months</string>
+		<string>notify</string>
+		<string>Number.format</string>
+		<string>Number.precision</string>
+		<string>originalLinkedFrom</string>
+		<string>originalLinkedTo</string>
+		<string>play</string>
+		<string>pow</string>
+		<string>radians</string>
+		<string>rand</string>
+		<string>replace</string>
+		<string>rgb</string>
+		<string>round</string>
+		<string>runCommand</string>
+		<string>seconds</string>
+		<string>Set.any</string>
+		<string>Set.at</string>
+		<string>Set.contains</string>
+		<string>Set.containsAnyOf</string>
+		<string>Set.count</string>
+		<string>Set.each</string>
+		<string>Set.empty</string>
+		<string>Set.every</string>
+		<string>Set.format</string>
+		<string>Set.icontains</string>
+		<string>Set.icontainsAnyOf</string>
+		<string>Set.intersect</string>
+		<string>Set.lookup</string>
+		<string>Set.max</string>
+		<string>set.min</string>
+		<string>set.remove</string>
+		<string>Set.replace</string>
+		<string>Set.reverse</string>
+		<string>Set.size</string>
+		<string>Set.sum</string>
+		<string>Set.tr</string>
+		<string>similarTo</string>
+		<string>sin</string>
+		<string>sqrt</string>
+		<string>stamp</string>
+		<string>String.beginsWith</string>
+		<string>String.bold</string>
+		<string>String.capitalize</string>
+		<string>String.contains</string>
+		<string>String.containsAnyOf</string>
+		<string>String.countOccurrencesOf</string>
+		<string>String.empty</string>
+		<string>String.endsWith</string>
+		<string>String.find</string>
+		<string>String.fontSize</string>
+		<string>String.icontains</string>
+		<string>String.icontainsAnyOf</string>
+		<string>String.italic</string>
+		<string>String.json</string>
+		<string>String.lowercase</string>
+		<string>String.paragraph</string>
+		<string>String.paragraphCount</string>
+		<string>String.paragraphs</string>
+		<string>String.replace</string>
+		<string>String.reverse</string>
+		<string>String.size</string>
+		<string>String.speak</string>
+		<string>String.split</string>
+		<string>String.strike</string>
+		<string>String.substr</string>
+		<string>String.toNumber</string>
+		<string>String.tr</string>
+		<string>String.uppercase</string>
+		<string>String.words</string>
+		<string>substr</string>
+		<string>sum_if</string>
+		<string>sum</string>
+		<string>tan</string>
+		<string>time</string>
+		<string>time</string>
+		<string>twitter</string>
+		<string>unlinkFrom</string>
+		<string>unlinkFromOriginal</string>
+		<string>unlinkTo</string>
+		<string>unlinkToOriginal</string>
+		<string>uppercase</string>
+		<string>urlEncode</string>
+		<string>value</string>
+		<string>values</string>
+		<string>var</string>
+		<string>version</string>
+		<string>weeks</string>
+		<string>word</string>
+		<string>wordsRelatedTo</string>
+		<string>year</string>
+		<string>years</string>		
+	</array>
+	
+	<!-- Specify a comment-out string: -->
+	<key>BBLMCommentLineDefault</key>   <string>//</string>
+	<key>Open Block Comments</key>      <string>{</string>
+	<key>Close Block Comments</key>     <string>}</string>
+	<key>Open Line Comments</key>       <string>//</string>
+	
+	<!-- You must specify the character set for
+             keywords and identifiers. Substitute your own:  -->
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Character Class</key>
+		<string>!$%&*+.,;/()<;=>?^~0-9A-Z_a-z</string>
+		<key>Open Line Comments</key>
+		<string>//</string>
+		<key>Open Statement Blocks</key>
+		<string>{</string>
+		<key>Close Statement Blocks</key>
+		<string>}</string>		
+	</dict> 
+</dict>
+</plist>

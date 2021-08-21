@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TextTransformComponents</key>
+	<array>
+		<dict>
+			<key>ComponentArguments</key>
+			<dict>
+				<key>ReplaceString</key>
+				<string>[\0]{lang=grc}</string>
+				<key>SearchString</key>
+				<string>((((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|(\d{1,4}[a|b]\d{1,2})){0,1})+(((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|\h|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|\h|(\d{1,4}[a|b]\d{1,2})){0,1})+(((\d{1,4}[a|b]\d{1,2})*|(§\d{1,2})*|(\d{1,4}[a|b]\d{1,2})*)*\p{Greek}+([\.|,|·|;|‘|’]|(\d{1,4}[a|b]\d{1,2})){0,1})+)</string>
+				<key>UseGrep</key>
+				<true/>
+			</dict>
+			<key>ComponentName</key>
+			<string>ReplaceAll</string>
+		</dict>
+	</array>
+	<key>TextTransformOptions</key>
+	<dict>
+		<key>SaveMode</key>
+		<string>ask </string>
+		<key>SearchRecursive</key>
+		<true/>
+		<key>TextFilesOnly</key>
+		<true/>
+	</dict>
+	<key>TextTransformSources</key>
+	<array/>
+	<key>com.barebones.DocumentType</key>
+	<string>TextTransform</string>
+</dict>
+</plist>
